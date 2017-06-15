@@ -2,15 +2,16 @@
 //  AppDelegate.h
 //  navigationController
 //
-//  Created by mac on 16/10/24.
-//  Copyright © 2016年 mac. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+//
+@property (assign, nonatomic) NSInteger selectedIndexPath;
 
+//
 @property (strong, nonatomic) UIWindow *window;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
